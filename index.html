@@ -14,12 +14,24 @@
             <div class="main_top_nav">
                 <div class="row">
                     <div class="col-md-4">
-                        <h1 class="main_timer">38:23:12:05</h1>
+                        <h1 id="main_timer">--:--:--:--</h1>
+                        <div class="main_timer_temp">
+                            <p class="main_timer_temp_item">дней</p>
+                            <p class="main_timer_temp_item">часов</p>
+                            <p class="main_timer_temp_item">минут</p>
+                            <p class="main_timer_temp_item">секунд</p>
+                        </div>
                     </div>
                     <div class="col-md-5">
                     </div>
                     <div class="col-md-3">
-                        <h1 class="main_timer">RU EN KZ FR SP</h1>
+                        <div class="main_timer">
+                            <a class="main_timer_item active" href="">RU</a>
+                            <a class="main_timer_item" href="">KZ</a>
+                            <a class="main_timer_item" href="">EN</a>
+                            <a class="main_timer_item" href="">FR</a>
+                            <a class="main_timer_item" href="">SP</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,5 +62,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/timer.js"></script>
 </body>
 </html>

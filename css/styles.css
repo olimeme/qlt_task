@@ -91,3 +91,39 @@
     font-size: 14px;
     color: white;
 }
+
+#main_timer {
+    font-size: 50px;
+    font-family: 'Gotham Pro Bold', sans-serif;
+}
+
+.main_timer_temp {
+    margin-left: 20px;
+}
+
+.main_timer_temp_item {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main_timer_item {
+    padding: 9px 9px;
+    font-family: 'Gotham Pro Bold', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.main_timer_item:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
