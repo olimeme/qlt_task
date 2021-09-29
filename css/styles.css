@@ -26,10 +26,12 @@
 
 .main {
     height: 1000px;
-    background-image: linear-gradient(to bottom, rgba(26, 46, 58, 0.9), rgba(52, 91, 117, 0.9)),
+    background-image: 
+    url('../img/main_bg_logo.png'),
+    linear-gradient(to bottom, rgba(26, 46, 58, 0.95), rgba(52, 91, 117, 0.95)),
     url('../img/main_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, cover;
     color: white;
 }
 
@@ -76,6 +78,7 @@
     font-size: 16px;
     font-family: 'Roboto Regular', sans-serif;
     margin-top: 25px;
+    text-align: justify;
 }
 
 .main_block_content_btn {
