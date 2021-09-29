@@ -52,7 +52,7 @@
     height: 1000px;
     background-image: 
     url('../img/main_bg_logo.png'),
-    linear-gradient(to bottom, rgba(26, 46, 58, 0.95), rgba(52, 91, 117, 0.95)),
+    linear-gradient(rgba(26, 46, 58, 0.95), rgba(52, 91, 117, 0.95)),
     url('../img/main_bg.png');
     background-repeat: no-repeat, repeat;
     background-size: cover, cover;
@@ -105,7 +105,7 @@
     text-align: justify;
 }
 
-.main_block_content_btn {
+.section_btn {
     width: 200px;
     height: 50px;
     margin-top: 25px;
@@ -152,7 +152,7 @@
     transition: 0.3s;
 }
 
-.active {
+.lang_active {
     background-color: white;
     color: black;
 }
@@ -179,7 +179,13 @@
 
 .program {
     padding: 80px;
-    background-color: rgba(26, 46, 58, 0.95);
+    position: relative;
+}
+
+.program_bg_logo {
+    position: absolute;
+    top: 550px;
+    left: 0px;
 }
 
 .program_btn {
@@ -190,11 +196,121 @@
     font-family: 'Gotham Pro Bold', sans-serif;
     color: #DBA682;
     background-color: rgba(0, 0, 0, 0);
+    float: right;
+    transition: 0.3s;
+}
+
+.program_btn:hover {
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.program_info_block {
+    background-color: white;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.program_info_dates {
+    width: 520px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Gotham Pro Bold',sans-serif;
+    position: relative;
+}
+
+.program_info_dates_days {
+    display: block;
+    margin-top: 60px;
+    color: black;
+    text-decoration: none;
+    opacity: 0.2;
+}
+
+.dates_active {
+    color: #DBA682;
+    opacity: 1;
+}
+
+.dates_underline {
+    position: absolute;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.dates_underline_active {
+    border: 1px solid #DBA682;
+    position: absolute;
+    bottom: -37px;
+    margin-right: 20px;
+    width: 130px;
+    opacity: 1;
+}
+
+.program_info_date_underline {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+.program_info_collapse {
+    width: 1030px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border: 1px solid #E8E8F3;
+    font-family: 'Gotham Pro Regular', sans-serif;
+}
+
+.collapse_info {
+    border-bottom: 1px solid #E8E8F3;
+}
+
+.collapse_info_block {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.collapse_info_block h6 {
+    color: #DBA682;
+}
+
+.collapse_info_block p {
+    margin-top: -5px;
+}
+
+.collapse_btn {
+    width: 100%;
+    padding: 18px 0;
+    border: none;
+    text-align: left;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 18px;
+}
+
+.unactive_collapse {
+    display: none;
+}
+
+.program_info_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .location {
+    background-image: url('../img/main_bg_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 80px;
-    background-color: rgba(26, 46, 58, 0.95);
 }
 
 .location_list {
@@ -208,9 +324,14 @@
     text-transform: uppercase;
     color: white;
     font-size: 20px;
-    bottom: 40px;
+    bottom: 20px;
+    margin-left: 10px;
 }
 
 .location_list {
     position: relative;
+}
+
+.wrapper {
+    background-image: linear-gradient(rgba(26, 46, 58, 1), rgba(52, 91, 117, 1));
 }
