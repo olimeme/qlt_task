@@ -59,9 +59,6 @@
     color: white;
 }
 
-.container {
-}
-
 .main_top_nav {
     padding-top: 62px;
 }
@@ -144,6 +141,7 @@
     border: 1px solid white;
     margin-left: 10px;
     transition: 0.3s;
+    float: right;
 }
 
 .main_lang_item:hover {
@@ -185,7 +183,7 @@
 .program_bg_logo {
     position: absolute;
     top: 550px;
-    left: 0px;
+    left: -40px;
 }
 
 .program_btn {
